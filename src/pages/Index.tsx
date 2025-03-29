@@ -21,10 +21,10 @@ const Index = () => {
           <section className="mb-12">
             <div className="text-center max-w-2xl mx-auto mb-8">
               <h2 className="text-3xl font-bold text-fuel-darkblue mb-4">
-                Calculate Your Vehicle's Fuel Consumption
+                Oblicz zużycie paliwa swojego pojazdu
               </h2>
               <p className="text-fuel-gray text-lg">
-                A simple and accurate way to calculate how much fuel your vehicle uses and what it costs you.
+                Prosty i dokładny sposób na obliczenie ile paliwa zużywa Twój pojazd i ile to kosztuje.
               </p>
             </div>
             
@@ -38,7 +38,7 @@ const Index = () => {
           
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-center text-fuel-darkblue mb-8">
-              Why Use Our Fuel Calculator?
+              Dlaczego warto korzystać z naszego kalkulatora?
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -48,9 +48,9 @@ const Index = () => {
                     <div className="bg-fuel-blue rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
                       <Droplet className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-medium mb-2">Accurate Consumption</h3>
+                    <h3 className="text-lg font-medium mb-2">Dokładne obliczenia</h3>
                     <p className="text-fuel-gray">
-                      Get precise measurements of your vehicle's fuel consumption in multiple formats.
+                      Uzyskaj precyzyjne pomiary zużycia paliwa w wielu formatach.
                     </p>
                   </div>
                 </CardContent>
@@ -62,9 +62,9 @@ const Index = () => {
                     <div className="bg-fuel-blue rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
                       <Gauge className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-medium mb-2">Range Estimation</h3>
+                    <h3 className="text-lg font-medium mb-2">Szacowanie zasięgu</h3>
                     <p className="text-fuel-gray">
-                      Calculate how far you can drive with a given amount of fuel.
+                      Oblicz, jak daleko możesz jechać na określonej ilości paliwa.
                     </p>
                   </div>
                 </CardContent>
@@ -76,9 +76,9 @@ const Index = () => {
                     <div className="bg-fuel-blue rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
                       <CalcIcon className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-medium mb-2">Fuel Planning</h3>
+                    <h3 className="text-lg font-medium mb-2">Planowanie paliwa</h3>
                     <p className="text-fuel-gray">
-                      Determine how much fuel you'll need for your planned journey.
+                      Określ, ile paliwa będziesz potrzebować na zaplanowaną podróż.
                     </p>
                   </div>
                 </CardContent>
@@ -90,9 +90,9 @@ const Index = () => {
                     <div className="bg-fuel-blue rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
                       <DollarSign className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-medium mb-2">Cost Analysis</h3>
+                    <h3 className="text-lg font-medium mb-2">Analiza kosztów</h3>
                     <p className="text-fuel-gray">
-                      Understand the true cost of your fuel consumption and plan your budget.
+                      Zrozum prawdziwy koszt zużycia paliwa i zaplanuj swój budżet.
                     </p>
                   </div>
                 </CardContent>
@@ -106,17 +106,17 @@ const Index = () => {
           <section>
             <div className="bg-gradient-to-r from-fuel-blue to-fuel-darkblue rounded-lg text-white p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">
-                Start Calculating Your Fuel Consumption Today
+                Zacznij obliczać zużycie paliwa już dziś
               </h2>
               <p className="mb-6 max-w-2xl mx-auto">
-                Make informed decisions about your vehicle's fuel efficiency and costs. Our calculator is free, easy to use, and provides valuable insights.
+                Podejmuj świadome decyzje dotyczące efektywności paliwowej i kosztów Twojego pojazdu. Nasz kalkulator jest darmowy, łatwy w użyciu i dostarcza wartościowych informacji.
               </p>
-              <a 
-                href="#" 
+              <Link 
+                to="/about" 
                 className="inline-block bg-white text-fuel-darkblue px-6 py-3 rounded-lg font-medium hover:bg-fuel-lightgray transition-colors duration-200"
               >
-                Learn More
-              </a>
+                Dowiedz się więcej
+              </Link>
             </div>
           </section>
         </div>
