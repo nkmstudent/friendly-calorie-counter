@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  DropletHalf, 
+  Droplet, 
   Ruler, 
   GaugeCircle, 
   Banknote,
@@ -35,7 +34,7 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
               <CardContent className="p-0">
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
-                    <DropletHalf className="mr-2 h-4 w-4" />
+                    <Droplet className="mr-2 h-4 w-4" />
                     Fuel Consumption
                   </h4>
                 </div>
@@ -139,7 +138,7 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
               <CardContent className="p-0">
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
-                    <DropletHalf className="mr-2 h-4 w-4" />
+                    <Droplet className="mr-2 h-4 w-4" />
                     Fuel Needed
                   </h4>
                 </div>

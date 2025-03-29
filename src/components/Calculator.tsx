@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
-import { Car, DropletHalf, CalculatorIcon, Ruler, Banknote } from "lucide-react";
+import { Car, Droplet, CalculatorIcon, Ruler, Banknote } from "lucide-react";
 import { 
   calculateConsumption, 
   calculateDistance, 
@@ -111,7 +111,7 @@ const Calculator = () => {
           <Tabs defaultValue="consumption" onValueChange={(value) => setCalculationType(value as CalculationType)}>
             <TabsList className="grid grid-cols-3 mb-6">
               <TabsTrigger value="consumption" className="flex items-center gap-2">
-                <DropletHalf className="h-4 w-4" />
+                <Droplet className="h-4 w-4" />
                 <span>Consumption</span>
               </TabsTrigger>
               <TabsTrigger value="distance" className="flex items-center gap-2">
