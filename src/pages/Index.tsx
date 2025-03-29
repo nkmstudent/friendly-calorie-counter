@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Droplet, Gauge, Calculator as CalcIcon, DollarSign } from 'lucide-react';
+import AdContainer from '@/components/AdContainer';
 
 const Index = () => {
   return (
@@ -14,6 +15,9 @@ const Index = () => {
       
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-8">
+          {/* Top ad container */}
+          <AdContainer className="mb-8" adSlot="top-banner" />
+          
           <section className="mb-12">
             <div className="text-center max-w-2xl mx-auto mb-8">
               <h2 className="text-3xl font-bold text-fuel-darkblue mb-4">
@@ -26,6 +30,9 @@ const Index = () => {
             
             <Calculator />
           </section>
+          
+          {/* Middle ad container */}
+          <AdContainer className="my-8" adSlot="middle-banner" />
           
           <Separator className="my-12" />
           
@@ -92,6 +99,9 @@ const Index = () => {
               </Card>
             </div>
           </section>
+          
+          {/* Bottom ad container */}
+          <AdContainer className="my-8" adSlot="bottom-banner" />
           
           <section>
             <div className="bg-gradient-to-r from-fuel-blue to-fuel-darkblue rounded-lg text-white p-8 text-center">
