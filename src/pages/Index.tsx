@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -21,10 +22,10 @@ const Index = () => {
           <section className="mb-12">
             <div className="text-center max-w-2xl mx-auto mb-8">
               <h2 className="text-3xl font-bold text-fuel-darkblue mb-4">
-                Oblicz zużycie paliwa swojego pojazdu
+                KALKULATOR SPALANIA
               </h2>
               <p className="text-fuel-gray text-lg">
-                Prosty i dokładny sposób na obliczenie ile paliwa zużywa Twój pojazd i ile to kosztuje.
+                Kalkulator średniego spalania na 100 km - prosty i dokładny sposób na obliczenie ile paliwa zużywa Twój pojazd i ile to kosztuje.
               </p>
             </div>
             
@@ -106,7 +107,7 @@ const Index = () => {
           <section>
             <div className="bg-gradient-to-r from-fuel-blue to-fuel-darkblue rounded-lg text-white p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">
-                Zacznij obliczać zużycie paliwa już dziś
+                Kalkulator kosztu przejechania trasy
               </h2>
               <p className="mb-6 max-w-2xl mx-auto">
                 Podejmuj świadome decyzje dotyczące efektywności paliwowej i kosztów Twojego pojazdu. Nasz kalkulator jest darmowy, łatwy w użyciu i dostarcza wartościowych informacji.

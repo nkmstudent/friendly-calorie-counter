@@ -21,7 +21,7 @@ import ResultsDisplay from "./ResultsDisplay";
 const initialValues: FuelValues = {
   distance: 100,
   fuelAmount: 8,
-  fuelPrice: 1.5,
+  fuelPrice: 6.5,
   consumption: 8
 };
 
@@ -85,13 +85,13 @@ const Calculator = () => {
       setResults(result);
     } catch (error) {
       console.error("Calculation error:", error);
-      toast.error("Error in calculation. Please check your inputs.");
+      toast.error("Błąd w obliczeniach. Sprawdź wprowadzone dane.");
     }
   };
 
   const resetCalculator = () => {
     setValues(initialValues);
-    toast.success("Calculator has been reset");
+    toast.success("Kalkulator został zresetowany");
   };
 
   return (
@@ -100,10 +100,10 @@ const Calculator = () => {
         <CardHeader className="bg-gradient-to-r from-fuel-blue to-fuel-darkblue text-white rounded-t-lg">
           <div className="flex items-center gap-2">
             <Car className="h-6 w-6" />
-            <CardTitle>Fuel Consumption Calculator</CardTitle>
+            <CardTitle>Kalkulator Spalania</CardTitle>
           </div>
           <CardDescription className="text-white/80">
-            Calculate your vehicle's fuel consumption, mileage, and costs
+            Oblicz średnie spalanie, zasięg i koszty paliwa Twojego pojazdu
           </CardDescription>
         </CardHeader>
         
@@ -112,22 +112,22 @@ const Calculator = () => {
             <TabsList className="grid grid-cols-3 mb-6">
               <TabsTrigger value="consumption" className="flex items-center gap-2">
                 <Droplet className="h-4 w-4" />
-                <span>Consumption</span>
+                <span>Średnie spalanie</span>
               </TabsTrigger>
               <TabsTrigger value="distance" className="flex items-center gap-2">
                 <Ruler className="h-4 w-4" />
-                <span>Distance</span>
+                <span>Zasięg</span>
               </TabsTrigger>
               <TabsTrigger value="fuel" className="flex items-center gap-2">
                 <CalculatorIcon className="h-4 w-4" />
-                <span>Fuel Needed</span>
+                <span>Koszt trasy</span>
               </TabsTrigger>
             </TabsList>
             
             <TabsContent value="consumption" className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="distance">Distance (km)</Label>
+                  <Label htmlFor="distance">Ilość przejechanych kilometrów</Label>
                   <Input
                     id="distance"
                     name="distance"
@@ -138,7 +138,7 @@ const Calculator = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="fuelAmount">Fuel Amount (liters)</Label>
+                  <Label htmlFor="fuelAmount">Spalone paliwo w litrach</Label>
                   <Input
                     id="fuelAmount"
                     name="fuelAmount"
@@ -150,7 +150,7 @@ const Calculator = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="fuelPrice">Fuel Price (per liter)</Label>
+                <Label htmlFor="fuelPrice">Cena litra paliwa (opcjonalne)</Label>
                 <div className="relative">
                   <Banknote className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -168,7 +168,7 @@ const Calculator = () => {
             <TabsContent value="distance" className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="fuelAmount">Fuel Amount (liters)</Label>
+                  <Label htmlFor="fuelAmount">Ilość paliwa (litry)</Label>
                   <Input
                     id="fuelAmount"
                     name="fuelAmount"
@@ -179,7 +179,7 @@ const Calculator = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="consumption">Consumption (L/100km)</Label>
+                  <Label htmlFor="consumption">Średnie spalanie (L/100km)</Label>
                   <Input
                     id="consumption"
                     name="consumption"
@@ -191,7 +191,7 @@ const Calculator = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="fuelPrice">Fuel Price (per liter)</Label>
+                <Label htmlFor="fuelPrice">Cena litra paliwa (opcjonalne)</Label>
                 <div className="relative">
                   <Banknote className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -209,7 +209,7 @@ const Calculator = () => {
             <TabsContent value="fuel" className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="distance">Distance (km)</Label>
+                  <Label htmlFor="distance">Długość planowanej trasy w kilometrach</Label>
                   <Input
                     id="distance"
                     name="distance"
@@ -220,7 +220,7 @@ const Calculator = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="consumption">Consumption (L/100km)</Label>
+                  <Label htmlFor="consumption">Średnie spalanie w litrach na 100 km</Label>
                   <Input
                     id="consumption"
                     name="consumption"
@@ -232,7 +232,7 @@ const Calculator = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="fuelPrice">Fuel Price (per liter)</Label>
+                <Label htmlFor="fuelPrice">Cena litra paliwa</Label>
                 <div className="relative">
                   <Banknote className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -252,7 +252,7 @@ const Calculator = () => {
             <Button variant="outline" onClick={resetCalculator} className="mr-2">
               Reset
             </Button>
-            <Button onClick={calculateResults}>Calculate</Button>
+            <Button onClick={calculateResults}>Oblicz</Button>
           </div>
           
           <Separator className="my-6" />

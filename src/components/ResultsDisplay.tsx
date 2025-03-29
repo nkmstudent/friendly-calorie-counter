@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -24,7 +25,7 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
     <div className="space-y-4">
       <h3 className="text-lg font-semibold flex items-center">
         <GaugeCircle className="mr-2 h-5 w-5 text-fuel-blue" />
-        Results
+        Wyniki
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -35,7 +36,7 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
                     <Droplet className="mr-2 h-4 w-4" />
-                    Fuel Consumption
+                    Zużycie Paliwa
                   </h4>
                 </div>
                 <div className="p-4">
@@ -64,21 +65,21 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
                     <Banknote className="mr-2 h-4 w-4" />
-                    Cost Analysis
+                    Analiza Kosztów
                   </h4>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between py-2 border-b">
-                    <span className="text-fuel-gray">Total Cost:</span>
-                    <span className="font-medium">{formatNumber(results.cost)}</span>
+                    <span className="text-fuel-gray">Całkowity koszt:</span>
+                    <span className="font-medium">{formatNumber(results.cost)} zł</span>
                   </div>
                   <div className="flex justify-between py-2 border-b">
-                    <span className="text-fuel-gray">Cost per km:</span>
-                    <span className="font-medium">{formatNumber(results.cost / (results.liters100km * 100 / results.liters100km))}</span>
+                    <span className="text-fuel-gray">Koszt za km:</span>
+                    <span className="font-medium">{formatNumber(results.cost / (results.liters100km * 100 / results.liters100km))} zł</span>
                   </div>
                   <div className="flex justify-between py-2">
-                    <span className="text-fuel-gray">Cost per 100 km:</span>
-                    <span className="font-medium">{formatNumber(results.liters100km * fuelPrice)}</span>
+                    <span className="text-fuel-gray">Koszt na 100 km:</span>
+                    <span className="font-medium">{formatNumber(results.liters100km * fuelPrice)} zł</span>
                   </div>
                 </div>
               </CardContent>
@@ -93,16 +94,16 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
                     <Ruler className="mr-2 h-4 w-4" />
-                    Distance
+                    Zasięg
                   </h4>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between py-2 border-b">
-                    <span className="text-fuel-gray">Total Distance:</span>
+                    <span className="text-fuel-gray">Całkowity zasięg:</span>
                     <span className="font-medium">{formatNumber(results.distance)} km</span>
                   </div>
                   <div className="flex justify-between py-2">
-                    <span className="text-fuel-gray">Distance in Miles:</span>
+                    <span className="text-fuel-gray">Zasięg w milach:</span>
                     <span className="font-medium">{formatNumber(results.distance * 0.621371)} mi</span>
                   </div>
                 </div>
@@ -114,17 +115,17 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
                     <Banknote className="mr-2 h-4 w-4" />
-                    Cost Analysis
+                    Analiza Kosztów
                   </h4>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between py-2 border-b">
-                    <span className="text-fuel-gray">Total Cost:</span>
-                    <span className="font-medium">{formatNumber(results.cost)}</span>
+                    <span className="text-fuel-gray">Całkowity koszt:</span>
+                    <span className="font-medium">{formatNumber(results.cost)} zł</span>
                   </div>
                   <div className="flex justify-between py-2">
-                    <span className="text-fuel-gray">Cost per km:</span>
-                    <span className="font-medium">{formatNumber(results.cost / results.distance)}</span>
+                    <span className="text-fuel-gray">Koszt za km:</span>
+                    <span className="font-medium">{formatNumber(results.cost / results.distance)} zł</span>
                   </div>
                 </div>
               </CardContent>
@@ -139,16 +140,16 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
                     <Droplet className="mr-2 h-4 w-4" />
-                    Fuel Needed
+                    Potrzebne Paliwo
                   </h4>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between py-2 border-b">
-                    <span className="text-fuel-gray">Fuel Required:</span>
-                    <span className="font-medium">{formatNumber(results.fuelNeeded)} liters</span>
+                    <span className="text-fuel-gray">Wymagane paliwo:</span>
+                    <span className="font-medium">{formatNumber(results.fuelNeeded)} litrów</span>
                   </div>
                   <div className="flex justify-between py-2">
-                    <span className="text-fuel-gray">Fuel in Gallons (US):</span>
+                    <span className="text-fuel-gray">Paliwo w galonach (US):</span>
                     <span className="font-medium">{formatNumber(results.fuelNeeded * 0.264172)} gal</span>
                   </div>
                 </div>
@@ -160,17 +161,17 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, fuelPrice }) =
                 <div className="bg-fuel-blue text-white p-3">
                   <h4 className="font-medium flex items-center">
                     <Banknote className="mr-2 h-4 w-4" />
-                    Cost Analysis
+                    Analiza Kosztów
                   </h4>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between py-2 border-b">
-                    <span className="text-fuel-gray">Total Cost:</span>
-                    <span className="font-medium">{formatNumber(results.cost)}</span>
+                    <span className="text-fuel-gray">Całkowity koszt:</span>
+                    <span className="font-medium">{formatNumber(results.cost)} zł</span>
                   </div>
                   <div className="flex justify-between py-2">
-                    <span className="text-fuel-gray">Cost per km:</span>
-                    <span className="font-medium">{formatNumber(results.cost / (results.fuelNeeded / (results.fuelNeeded * 100)))}</span>
+                    <span className="text-fuel-gray">Koszt za km:</span>
+                    <span className="font-medium">{formatNumber(results.cost / (results.fuelNeeded / (results.fuelNeeded * 100)))} zł</span>
                   </div>
                 </div>
               </CardContent>
