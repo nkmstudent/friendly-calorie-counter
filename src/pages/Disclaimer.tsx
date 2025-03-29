@@ -14,7 +14,7 @@ const Disclaimer = () => {
           <AdContainer className="mb-8" adSlot="disclaimer-top" />
           
           <section className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h1 className="text-3xl font-bold text-fuel-darkblue mb-6">Zastrzeżenia</h1>
+            <h1 className="text-3xl font-bold text-fuel-darkblue mb-6">Disclaimer</h1>
             
             <div className="prose max-w-none">
               <p className="mb-4">

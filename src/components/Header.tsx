@@ -19,32 +19,32 @@ const Header = () => {
             <ul className="flex flex-wrap justify-center space-x-4">
               <li>
                 <Link to="/" className="hover:text-fuel-lightblue transition-colors duration-200">
-                  Strona główna
+                  Home
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="hover:text-fuel-lightblue transition-colors duration-200">
-                  O nas
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-fuel-lightblue transition-colors duration-200">
-                  Kontakt
+                  Contact
                 </Link>
               </li>
               <li>
                 <Link to="/terms" className="hover:text-fuel-lightblue transition-colors duration-200">
-                  Regulamin
+                  Terms & Conditions
                 </Link>
               </li>
               <li>
                 <Link to="/privacy" className="hover:text-fuel-lightblue transition-colors duration-200">
-                  Polityka prywatności
+                  Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link to="/disclaimer" className="hover:text-fuel-lightblue transition-colors duration-200">
-                  Zastrzeżenia
+                  Disclaimer
                 </Link>
               </li>
             </ul>

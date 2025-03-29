@@ -12,16 +12,16 @@ const Footer = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/privacy" className="hover:text-fuel-lightblue transition-colors duration-200">
-              Polityka prywatności
+              Privacy Policy
             </Link>
             <Link to="/terms" className="hover:text-fuel-lightblue transition-colors duration-200">
-              Regulamin
+              Terms & Conditions
             </Link>
             <Link to="/disclaimer" className="hover:text-fuel-lightblue transition-colors duration-200">
-              Zastrzeżenia
+              Disclaimer
             </Link>
             <Link to="/contact" className="hover:text-fuel-lightblue transition-colors duration-200">
-              Kontakt
+              Contact
             </Link>
           </div>
         </div>
